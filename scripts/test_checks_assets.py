@@ -8,6 +8,11 @@ from scripts.ampliacion import (
     grafico_renta_municipios,
 )
 
+from scripts.test_prompt import (
+    codigo_generado_ia,
+    visualizacion_png,
+)
+
 
 # ── CHECK 1: CARGA (raw) ──────────────────────────────────────────────────────
 
@@ -91,6 +96,97 @@ def check_series_ordenadas(grafico_renta_municipios, renta_con_nombres):
             "mensaje": MetadataValue.text(
                 "Las barras deben estar ordenadas de menor a mayor "
                 "para facilitar la comparación entre municipios."
+            ),
+        },
+    )
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# NUEVOS CHECKS – Pipeline de generación automática con IA (Práctica 4)
+# ══════════════════════════════════════════════════════════════════════════════
+
+
+# ── CHECK 4: SINTAXIS PYTHON VÁLIDA (generación IA) ──────────────────────────
+
+@asset_check(asset=codigo_generado_ia)
+def check_codigo_sintaxis(codigo_generado_ia):
+    """
+    Verifica que el string devuelto por el LLM es Python sintácticamente
+    correcto usando compile(). Si el LLM incluyó Markdown residual,
+    comentarios mal formados o sintaxis inventada, este check lo detecta
+    antes de que exec() lance un error no controlado.
+    """
+    try:
+        compile(codigo_generado_ia, "<string>", "exec")
+        passed = True
+        msg = "El código compila correctamente."
+    except SyntaxError as e:
+        passed = False
+        msg = f"SyntaxError en línea {e.lineno}: {e.msg}"
+
+    return AssetCheckResult(
+        passed=passed,
+        metadata={
+            "resultado": MetadataValue.text(msg),
+            "longitud_codigo": MetadataValue.int(len(codigo_generado_ia)),
+            "mensaje": MetadataValue.text(
+                "Si falla, el LLM devolvió texto que no es Python válido "
+                "(Markdown, explicaciones en lenguaje natural, etc.)."
+            ),
+        },
+    )
+
+
+# ── CHECK 5: PRESENCIA DE generar_plot ────────────────────────────────────────
+
+@asset_check(asset=codigo_generado_ia)
+def check_funcion_generar_plot(codigo_generado_ia):
+    """
+    Verifica que el código generado contiene la definición de la función
+    generar_plot(df) y un return. El asset visualizacion_png recupera la
+    función del diccionario de exec() con la clave 'generar_plot'; si la IA
+    le dio otro nombre, el pipeline fallaría con KeyError.
+    """
+    tiene_def    = "def generar_plot" in codigo_generado_ia
+    tiene_return = "return" in codigo_generado_ia
+    passed = tiene_def and tiene_return
+
+    return AssetCheckResult(
+        passed=passed,
+        metadata={
+            "tiene_def_generar_plot": MetadataValue.text("Sí" if tiene_def else "No"),
+            "tiene_return": MetadataValue.text("Sí" if tiene_return else "No"),
+            "mensaje": MetadataValue.text(
+                "El template exige que la IA defina generar_plot(df) con un return. "
+                "Si falta alguno, el gráfico no se generará."
+            ),
+        },
+    )
+
+
+# ── CHECK 6: FICHERO PNG GENERADO ────────────────────────────────────────────
+
+@asset_check(asset=visualizacion_png)
+def check_fichero_png_existe(visualizacion_png):
+    """
+    Verifica que el fichero PNG generado existe en disco y tiene un tamaño
+    mayor a 0 bytes. Un fichero vacío o inexistente indica que plotnine
+    falló silenciosamente al guardar, comprometiendo el deploy a GitHub Pages.
+    """
+    ruta   = visualizacion_png          # el asset devuelve la ruta del fichero
+    existe = os.path.isfile(ruta)
+    tamano = os.path.getsize(ruta) if existe else 0
+    passed = existe and tamano > 0
+
+    return AssetCheckResult(
+        passed=passed,
+        metadata={
+            "ruta": MetadataValue.text(ruta),
+            "existe": MetadataValue.text("Sí" if existe else "No"),
+            "tamano_bytes": MetadataValue.int(tamano),
+            "mensaje": MetadataValue.text(
+                "El fichero PNG debe existir y tener contenido "
+                "para que el deploy a GitHub Pages sea correcto."
             ),
         },
     )

@@ -1,0 +1,35 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Probar el servicio de IA}{1}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Prueba básica con curl}{1}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Prueba orientada a plotnine}{2}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Experimentar con los prompts}{3}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Checks de calidad en Dagster}{5}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Checks de la práctica anterior}{5}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Nuevos checks para el pipeline de generación con IA}{5}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Check de sintaxis Python válida}{5}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Check de presencia de \texttt {generar\_plot}}{5}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Check de existencia del fichero PNG}{6}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Resumen completo de checks}{6}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Integración en el proyecto de rentas}{7}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Estructura del proyecto}{7}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Fichero definitions.py}{7}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Asset de ingesta (\texttt {islas\_raw})}{7}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Asset de plantilla IA (\texttt {template\_ia})}{8}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Asset de generación (\texttt {codigo\_generado\_ia})}{8}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Asset de visualización (\texttt {visualizacion\_png})}{8}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Despliegue con GitHub Pages}{9}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Configuración de GitHub Pages}{9}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Automatización del push}{9}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Mapa coroplético de rentas por municipio}{10}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Mapa con plotnine y GeoPandas}{10}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Mapa con Power BI}{11}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Preparación de geometrías y datos}{11}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Configuración del entorno y variables}{11}{subsection.7.2.2}%
+\contentsline {chapter}{\numberline {8}Automatización con sensores}{12}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Implementación del sensor}{12}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Definición del Job}{13}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Lógica del sensor}{13}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}Registro en definitions.py}{14}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Funcionamiento en la interfaz de Dagster}{14}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Enlace al repositorio de GitHub}{15}{chapter.9}%
