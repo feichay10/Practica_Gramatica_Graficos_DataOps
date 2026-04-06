@@ -1,9 +1,9 @@
-PWD /home/feichay/Escritorio/Master/Visualizacion/Practica_04-Automatizacion_Generacion_Codigo/report
+PWD /home/feichay/Escritorio/Master/Practica_Gramatica_Graficos_DataOps/report
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/xetex/xelatex.fmt
-INPUT /home/feichay/Escritorio/Master/Visualizacion/Practica_04-Automatizacion_Generacion_Codigo/report/Informe_04.tex
+INPUT /home/feichay/Escritorio/Master/Practica_Gramatica_Graficos_DataOps/report/Informe_04.tex
 OUTPUT build/Informe_04.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls

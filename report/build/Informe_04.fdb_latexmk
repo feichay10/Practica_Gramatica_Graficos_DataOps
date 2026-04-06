@@ -1,11 +1,11 @@
 # Fdb version 3
-["xdvipdfmx"] 1775511963 "build/Informe_04.xdv" "build/Informe_04.pdf" "build/Informe_04" 1775511965
-  "build/Informe_04.xdv" 1775511963 416708 b78b6ee08dfa78957a846e7479eb68b9 "xelatex"
+["xdvipdfmx"] 1775513320 "build/Informe_04.xdv" "build/Informe_04.pdf" "build/Informe_04" 1775513322
+  "build/Informe_04.xdv" 1775513320 417580 6fdaf37b4edbc4d5a05f3ac7cebad9d0 "xelatex"
   (generated)
   "build/Informe_04.pdf"
-["xelatex"] 1775511962 "/home/feichay/Escritorio/Master/Visualizacion/Practica_04-Automatizacion_Generacion_Codigo/report/Informe_04.tex" "build/Informe_04.xdv" "Informe_04" 1775511965
+["xelatex"] 1775513319 "/home/feichay/Escritorio/Master/Practica_Gramatica_Graficos_DataOps/report/Informe_04.tex" "build/Informe_04.xdv" "Informe_04" 1775513322
   "/etc/texmf/web2c/texmf.cnf" 1747641850 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/feichay/Escritorio/Master/Visualizacion/Practica_04-Automatizacion_Generacion_Codigo/report/Informe_04.tex" 1775511797 31319 6e974ecd3492c8f1b3d899796d0d8572 ""
+  "/home/feichay/Escritorio/Master/Practica_Gramatica_Graficos_DataOps/report/Informe_04.tex" 1775513318 31314 b6c697bf055789243d7edf8bc0c33a87 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -211,19 +211,19 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1772784536 5134130 33cedeb77822b4c41e89842af256d794 ""
-  "Informe_04.tex" 1775511797 31319 6e974ecd3492c8f1b3d899796d0d8572 ""
-  "build/Informe_04.aux" 1775511963 9584 a061f490684a76f6114a400cd628ae3a "xelatex"
-  "build/Informe_04.out" 1775511963 7211 0fa6e637279a19852031c2a990a71042 "xelatex"
-  "build/Informe_04.toc" 1775511963 3183 efefc7e2f24e102622bb5de898055301 "xelatex"
-  "img/dagster_assets_prompt.png" 1775511150 96897 04b20e70da0dd25727db4c4cdc440fca ""
-  "img/dagster_pipeline_completo.png" 1775511150 109052 e37e84dd94211dd9923484d0f8a63823 ""
-  "img/dagster_sensor.png" 1775511150 28649 134ae2e9d0e12dda0f75d36656ce95e6 ""
-  "img/logo.png" 1775511147 22182 114169a98b0ea8418d5b715c5fa6cd48 ""
-  "img/mapa_plotnine.png" 1775511150 146042 bc3d13668c41306071663e35fa2a9875 ""
-  "img/mapa_powerbi.jpg" 1775511150 514392 210bc18167b95ee72d5034d10c5cd53c ""
-  "img/prueba_gpu1.png" 1775511150 18503 fd637484d5f5721c1d26e16099fd9717 ""
-  "img/prueba_plotnine.png" 1775511150 62264 fdfdd4a09d6d9a4da8cdb3c28d21aecb ""
-  "img/visualizacion_ia_1.png" 1775511150 64899 5740f562d3ceba733f3d0d863cedbaa9 ""
+  "Informe_04.tex" 1775513318 31314 b6c697bf055789243d7edf8bc0c33a87 ""
+  "build/Informe_04.aux" 1775513320 9584 a061f490684a76f6114a400cd628ae3a "xelatex"
+  "build/Informe_04.out" 1775513320 7211 0fa6e637279a19852031c2a990a71042 "xelatex"
+  "build/Informe_04.toc" 1775513320 3183 efefc7e2f24e102622bb5de898055301 "xelatex"
+  "img/dagster_assets_prompt.png" 1775512722 96897 04b20e70da0dd25727db4c4cdc440fca ""
+  "img/dagster_pipeline_completo.png" 1775512722 109052 e37e84dd94211dd9923484d0f8a63823 ""
+  "img/dagster_sensor.png" 1775512722 28649 134ae2e9d0e12dda0f75d36656ce95e6 ""
+  "img/logo.png" 1775512722 22182 114169a98b0ea8418d5b715c5fa6cd48 ""
+  "img/mapa_plotnine.png" 1775512722 146042 bc3d13668c41306071663e35fa2a9875 ""
+  "img/mapa_powerbi.jpg" 1775512722 514392 210bc18167b95ee72d5034d10c5cd53c ""
+  "img/prueba_gpu1.png" 1775512722 18503 fd637484d5f5721c1d26e16099fd9717 ""
+  "img/prueba_plotnine.png" 1775512722 62264 fdfdd4a09d6d9a4da8cdb3c28d21aecb ""
+  "img/visualizacion_ia_1.png" 1775512722 64899 5740f562d3ceba733f3d0d863cedbaa9 ""
   (generated)
   "build/Informe_04.aux"
   "build/Informe_04.log"

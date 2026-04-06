@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2026.3.6)  6 APR 2026 22:46
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2026.3.6)  6 APR 2026 23:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/feichay/Escritorio/Master/Visualizacion/Practica_04-Automatizacion_Generacion_Codigo/report/Informe_04.tex
-(/home/feichay/Escritorio/Master/Visualizacion/Practica_04-Automatizacion_Generacion_Codigo/report/Informe_04.tex
+**/home/feichay/Escritorio/Master/Practica_Gramatica_Graficos_DataOps/report/Informe_04.tex
+(/home/feichay/Escritorio/Master/Practica_Gramatica_Graficos_DataOps/report/Informe_04.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
@@ -959,12 +959,7 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <14.4> not available
  [7]
 File: img/dagster_pipeline_completo.png Graphic file (type bmp)
 <img/dagster_pipeline_completo.png>
- [8]
-Overfull \hbox (95.35161pt too wide) in paragraph at lines 572--573
-[]\TU/lmr/m/n/10.95 La URL queda: \TU/lmtt/m/n/10.95 https://feichay10.github.io/Practica_Gramatica_Graficos_DataOps/visualizacion_ia_1.png 
- []
-
-[9]
+ [8] [9]
 File: img/mapa_plotnine.png Graphic file (type bmp)
 <img/mapa_plotnine.png>
  [10]
@@ -982,11 +977,11 @@ Package rerunfilecheck Info: File `Informe_04.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  30026 strings out of 476191
- 562140 string characters out of 5812073
+ 562071 string characters out of 5812073
  1316620 words of memory out of 5000000
  50188 multiletter control sequences out of 15000+600000
  477425 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,10n,117p,1297b,2036s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,10n,117p,1274b,2036s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on build/Informe_04.xdv (17 pages, 416708 bytes).
+Output written on build/Informe_04.xdv (17 pages, 417580 bytes).

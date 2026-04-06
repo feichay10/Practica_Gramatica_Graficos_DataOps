@@ -517,49 +517,6 @@ el gráfico como PNG. Incluye push automático a GitHub Pages mediante \texttt{s
   \caption{Pipeline completo materializado en la interfaz de Dagster}
 \end{figure}
 
-% % ============================================================================
-% \chapter{Justificación de las plantillas de IA}
-% % ============================================================================
-
-% El diseño del prompt enviado al LLM sigue una estrategia deliberada para maximizar la calidad
-% y fiabilidad del código generado.
-
-% \section{Uso de la gramática de gráficos de Wickham}
-
-% El prompt describe el gráfico utilizando la terminología de la \textbf{gramática de gráficos}
-% de Wickham: estéticas, geometrías, escalas y temas. Plotnine es una implementación directa
-% de esta gramática, por lo que el LLM puede traducir casi literalmente cada elemento.
-
-% \section{Template con nombre de función fijo}
-
-% Se impone \texttt{generar\_plot(df)} porque el asset de visualización recupera la función
-% del diccionario de \texttt{exec()} con esa clave exacta.
-
-% \section{Principios Gestalt}
-
-% Se incluyen indicaciones sobre el principio de \textbf{Punto Focal} para resaltar Tenerife
-% frente al resto, traducido en \texttt{scale\_color\_manual} con colores diferenciados.
-
-% \section{Código explícito en el prompt}
-
-% Tras observar errores recurrentes del LLM (argumentos posicionales en
-% \texttt{scale\_color\_manual}, strings inválidos para \texttt{legend\_position}), se incluyó
-% el código exacto esperado en el prompt para eliminar ambigüedad.
-
-% \section{Temperatura baja}
-
-% Se utiliza \textbf{0.1} para minimizar la aleatoriedad y obtener código determinista y correcto.
-
-% \section{Restricción a código Python exclusivo}
-
-% El system prompt indica ``sin explicaciones ni Markdown'' para evitar que \texttt{exec()} falle
-% con texto no ejecutable.
-
-% \section{Parametrización dinámica}
-
-% Las columnas e islas se obtienen dinámicamente del asset \texttt{islas\_raw}, haciendo el
-% pipeline adaptable a cambios en los datos de entrada.
-
 % ============================================================================
 \chapter{Despliegue con GitHub Pages}
 % ============================================================================
@@ -569,7 +526,9 @@ el gráfico como PNG. Incluye push automático a GitHub Pages mediante \texttt{s
 \begin{enumerate}
   \item \texttt{Settings} $\rightarrow$ \texttt{Pages} en el repositorio de GitHub.
   \item Seleccionar rama \texttt{main} y carpeta raíz como fuente.
-  \item La URL queda: \texttt{https://feichay10.github.io/Practica\_Gramatica\_Graficos\_DataOps/visualizacion\_ia\_1.png}
+  \item La URL queda:
+
+  \url{https://feichay10.github.io/Practica_Gramatica_Graficos_DataOps/visualizacion_ia_1.png}
 \end{enumerate}
 
 \section{Automatización del push}
@@ -580,13 +539,6 @@ subprocess.run(["git", "commit", "-m",
                  "Actualizacion automatica del grafico"])
 subprocess.run(["git", "push"])
 \end{lstlisting}
-
-% TODO: Captura del navegador con el PNG en GitHub Pages
-\begin{figure}[H]
-  \centering
-%   \includegraphics[width=1\textwidth]{img/github_pages.png}
-  \caption{Gráfico accesible desde GitHub Pages}
-\end{figure}
 
 \newpage
 
